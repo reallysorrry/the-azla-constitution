@@ -152,7 +152,7 @@ export function ScreenExhibitA({ onNext }: NextProps) {
           initial={{ opacity: 0, rotate: -8, scale: 0.8 }}
           animate={{ opacity: 1, rotate: -2, scale: 1 }}
           transition={{ duration: 0.9, ease }}
-          className="relative w-[46vw] max-w-[240px] shrink-0 sm:w-[30vw] sm:max-w-[300px]"
+          className="relative mb-4 w-[42vw] max-w-[230px] shrink-0 sm:mb-0 sm:w-[30vw] sm:max-w-[300px]"
         >
           <img
             src={chipsEvidence}
@@ -563,7 +563,7 @@ export function ScreenGame({ onNext }: NextProps) {
     <Stage className="paper-grain">
       <div className="flex w-full max-w-2xl flex-col items-center gap-4">
         <Kicker>The Azla Obedience Test 🎮</Kicker>
-        <div className="flex gap-1.5">
+        <div className="mb-3 flex gap-1.5">
           {QUESTIONS.map((_, i) => (
             <span
               key={i}
